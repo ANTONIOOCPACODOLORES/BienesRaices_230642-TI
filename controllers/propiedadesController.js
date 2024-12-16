@@ -386,7 +386,6 @@ const enviarMensaje = async (req, res) => {
         return res.redirect('/404')
     }
 
-
     //renderizar errores
 
     //Validacion
