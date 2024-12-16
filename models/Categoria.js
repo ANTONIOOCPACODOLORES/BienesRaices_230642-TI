@@ -1,12 +1,26 @@
-import { DataTypes } from 'sequelize'
-import db from '../config/db.js'
-
-const Categoria = db.define('categorias', {
-   nombre: {
-      type: DataTypes.STRING(30),
-      allowNull: false
+const categorias = [
+   {
+     nombre: 'Casa'
+   },
+   {
+     nombre: 'Departamento'
+   },
+   {
+     nombre: 'Bodega'
+   },
+   {
+     nombre: 'Terreno'
+   },
+   {
+     nombre: 'Cabaña'
+   },
+   {
+     nombre: 'Local Comercial' // Nueva categoría
+   },
+   {
+     nombre: 'Establecimiento',
+     establecimiento: true 
    }
-
-});
-
-export default Categoria
+ ];
+ 
+ export default categorias;
