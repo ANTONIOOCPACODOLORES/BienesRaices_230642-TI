@@ -317,7 +317,11 @@ const enviarMensaje = async (req, res) => {
         return res.redirect('/404');
     }
 
-    let resultado = validationResult(req);
+    //renderizar errores
+
+    //Validacion
+    let resultado = validationResult(req)
+
 
     if (!resultado.isEmpty()) {
         return res.render('propiedades/mostrar', {
